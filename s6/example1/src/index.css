@@ -1,0 +1,43 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+.dark {
+  --bg-color: #333333;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  background: var(--bg-color);
+}
+
+.controls {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
